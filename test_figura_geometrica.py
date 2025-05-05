@@ -1,10 +1,12 @@
 from Cuadrado import Cuadrado
 from Rectangulo import Rectangulo
+
 print()
 
 print('Creacion Objeto Cuadrado'.center(50,'-'))
-cuadrado1 = Cuadrado(lado=5, color='Rojo')
+cuadrado1 = Cuadrado(lado=-5, color='Rojo')
 cuadrado1.alto = 20
+cuadrado1.ancho = -5
 print(f'Calculo de area del cuadradro: {cuadrado1.calcular_area()}')
 print(cuadrado1)
 
