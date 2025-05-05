@@ -1,7 +1,13 @@
 class FiguraGeometrica:
     def __init__(self, ancho, alto):
-        self._ancho = ancho
-        self._alto = alto
+        if 0 < ancho < 10:
+            self._ancho = ancho
+        else:
+            self._ancho = 0
+        if 0 < alto < 10:
+            self._alto = alto
+        else:
+            self._alto = 0
         
     @property
     def ancho(self):
@@ -22,4 +28,8 @@ class FiguraGeometrica:
 
     def __str__(self):
         return (f'FiguraGeometrica [Ancho: {self._ancho}, Alto: {self._alto}]')
+    
+    
+    def _validar_valor(self, valor):
+        return True if 0 < 10 else False
     
